@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="313792c9-c774-4cfc-a52d-ba063a51c02a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PS01/index.html" afterPath="$PROJECT_DIR$/PS01/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PS01/index.js" afterPath="$PROJECT_DIR$/PS01/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PS01/style.css" afterPath="$PROJECT_DIR$/PS01/style.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,19 +17,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/barChart_exit_complete/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PS01/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
+            <state relative-caret-position="330">
               <caret line="22" column="73" lean-forward="false" selection-start-line="22" selection-start-column="73" selection-end-line="22" selection-end-column="73" />
               <folding />
             </state>
@@ -41,8 +29,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PS01/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="61" column="87" lean-forward="true" selection-start-line="61" selection-start-column="47" selection-end-line="61" selection-end-column="87" />
+            <state relative-caret-position="95">
+              <caret line="43" column="8" lean-forward="false" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -53,16 +41,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PS01/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="12" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -127,6 +105,7 @@
       <find>y</find>
       <find>text</find>
       <find>current</find>
+      <find>dataPoints</find>
       <find>max</find>
     </findStrings>
   </component>
@@ -151,10 +130,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="116" />
-    <option name="y" value="97" />
+    <option name="x" value="32" />
+    <option name="y" value="186" />
     <option name="width" value="1440" />
-    <option name="height" value="741" />
+    <option name="height" value="630" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -245,15 +224,15 @@
       <updated>1508882937509</updated>
       <workItem from="1508882938681" duration="1135000" />
       <workItem from="1508885433221" duration="3090000" />
-      <workItem from="1509309913105" duration="14911000" />
+      <workItem from="1509309913105" duration="16476000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19136000" />
+    <option name="totallyTimeSpent" value="20701000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="116" y="97" width="1440" height="741" extended-state="0" />
+    <frame x="32" y="186" width="1440" height="630" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24861111" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -421,18 +400,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PS01/style.css">
+    <entry file="file://$PROJECT_DIR$/../week5-Qingyue99/updateAllYears_complete/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="12" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+        <state relative-caret-position="253">
+          <caret line="49" column="25" lean-forward="true" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PS01/index.html">
+    <entry file="file://$PROJECT_DIR$/PS01/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="22" column="73" lean-forward="false" selection-start-line="22" selection-start-column="73" selection-end-line="22" selection-end-column="73" />
+        <state relative-caret-position="405">
+          <caret line="27" column="12" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -445,10 +424,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/PS01/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="73" lean-forward="false" selection-start-line="22" selection-start-column="73" selection-end-line="22" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PS01/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="61" column="87" lean-forward="true" selection-start-line="61" selection-start-column="47" selection-end-line="61" selection-end-column="87" />
+        <state relative-caret-position="95">
+          <caret line="43" column="8" lean-forward="false" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
           <folding />
         </state>
       </provider>

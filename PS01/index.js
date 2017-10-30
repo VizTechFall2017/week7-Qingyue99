@@ -31,15 +31,25 @@ d3.csv("2chart.csv",
     yaxis.domain([0, d3.max(data, function(d) { return d.total; })]).nice();
     z.domain(keys);
 
-    var focus = svg.append("g")
-            .attr("class", "focus")
+    var tooltip = svg.append("g")
+            .attr("class", "tooltip")
             .style("display", "none");
 
-    focus.append("text")
-            .attr("x", 9)
-            .attr("dy", ".35em");
+        tooltip.append("rect")
+            .attr("width", 40)
+            .attr("height", 25)
+            .attr("fill", "white")
+            .style("opacity", 0.7);
 
-    g.append("g")
+        tooltip.append("text")
+            .attr("x", 15)
+            .attr("dy", "1.2em")
+            .style("text-anchor", "middle")
+            .attr("font-size", "12px")
+            .attr("font-weight", "bold");
+
+
+        g.append("g")
         .selectAll("g")
         .data(d3.stack().keys(keys)(data))
         .enter().append("g")
