@@ -13,7 +13,7 @@ var yaxis = d3.scaleLinear()
     .rangeRound([height, 0]);
 
 var z = d3.scaleOrdinal()
-    .range(["#98abc5", "#8a89a6"]);
+    .range(["#98abc5", "#d25c4d"]);
 
 d3.csv("2chart.csv",
     function(d, i, columns) {
@@ -65,17 +65,17 @@ d3.csv("2chart.csv",
             this.classList.add('c' + d.data.item.replace(/[\s\'\-]/g, ''));
         })
         .on('mouseover', function(d){
-            d3.select(this).attr('stroke','red').attr('stroke-width','2');
+            d3.select(this).attr('stroke','red').attr('stroke-width','4');
 
             currentClass = d3.select(this).attr('class');
-            svg.selectAll('.' + currentClass).attr('stroke','red').attr('stroke-width','2');
+            svg.selectAll('.' + currentClass).attr('stroke','pink').attr('stroke-width','4');
          //   focus.attr("transform", "translate(" + x(d.date) + "," + y(d.close) + ")");
          //   focus.select("text").text("yyyy");
         })
         .on('mouseout', function(d){
             d3.select(this).attr('stroke','').attr('stroke-width','0');;
             currentClass = d3.select(this).attr('class');
-            svg.selectAll('.' + currentClass).attr('stroke','').attr('stroke-width','2');
+            svg.selectAll('.' + currentClass).attr('stroke','').attr('stroke-width','4');
         });
 
     g.append("g")
