@@ -1,7 +1,7 @@
 var svg = d3.select("svg"),
     margin = {top: 20, right: 20, bottom: 30, left: 40},
-    width = +svg.attr("width") - margin.left - margin.right,
-    height = +svg.attr("height") - margin.top - margin.bottom,
+    width = 900 - margin.left - margin.right,
+    height = 600 - margin.top - margin.bottom,
     g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 var x = d3.scaleBand()
@@ -9,7 +9,7 @@ var x = d3.scaleBand()
     .paddingInner(0.05)
     .align(0.1);
 
-var y = d3.scaleLinear()
+var yaxis = d3.scaleLinear()
     .rangeRound([height, 0]);
 
 var z = d3.scaleOrdinal()
@@ -20,13 +20,15 @@ d3.csv("2chart.csv",
         for (i = 1, t = 0; i < columns.length; ++i) t += d[columns[i]] = +d[columns[i]];
         d.total = t;
         return d;
-    }, function(error, data) {
+    }
+
+    , function(error, data) {
     var keys = data.columns.slice(1);
 
     //console.log(keys);
 
     x.domain(data.map(function(d) { return d.item; }));
-    y.domain([0, d3.max(data, function(d) { return d.total; })]).nice();
+    yaxis.domain([0, d3.max(data, function(d) { return d.total; })]).nice();
     z.domain(keys);
 
     g.append("g")
@@ -38,8 +40,8 @@ d3.csv("2chart.csv",
         .data(function(d) { return d; })
         .enter().append("rect")
         .attr("x", function(d) { return x(d.data.item); })
-        .attr("y", function(d) { return y(d[1]); })
-        .attr("height", function(d) { return y(d[0]) - y(d[1]); })
+        .attr("y", function(d) { return yaxis(d[1]); })
+        .attr("height", function(d) { return yaxis(d[0]) - yaxis(d[1]); })
         .attr("width", x.bandwidth())
         .each(function(d){
             this.classList.add('c' + d.data.item.replace(/[\s\'\-]/g, ''));
@@ -51,7 +53,7 @@ d3.csv("2chart.csv",
             svg.selectAll('.' + currentClass).attr('stroke','red').attr('stroke-width','2');
         })
         .on('mouseout', function(d){
-            d3.select(this).attr('stroke','').attr('stroke-width','0');
+            d3.select(this).attr('stroke','').attr('stroke-width','0');;
             currentClass = d3.select(this).attr('class');
             svg.selectAll('.' + currentClass).attr('stroke','').attr('stroke-width','2');
         });
@@ -63,15 +65,16 @@ d3.csv("2chart.csv",
 
     g.append("g")
         .attr("class", "axis")
-        .call(d3.axisLeft(y).ticks(null, "s"))
+        .call(d3.axisLeft(yaxis).ticks(null, "s"))
         .append("text")
         .attr("x", 2)
-        .attr("y", y(y.ticks().pop()) + 0.5)
+        .attr("y", yaxis(yaxis.ticks().pop()) + 0.5)
         .attr("dy", "0.32em")
         .attr("fill", "#000")
         .attr("font-weight", "bold")
         .attr("text-anchor", "start")
-        .text("time");
+        .text("Number of People");
+
 
     var legend = g.append("g")
         .attr("font-family", "sans-serif")
